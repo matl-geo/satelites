@@ -7,5 +7,4 @@ sentinelhub
 ipywidgets
 matplotlib
 datetime
-os
 utils
