@@ -11,22 +11,13 @@ else
 fi  
 
 # Install pip if not already installed
-if ! command -v pip3 &> /dev/null; then
+if ! command -v python3-pip &> /dev/null; then
     echo "pip is not installed. Installing pip..."
     sudo apt install -y python3-pip
     echo "pip installed successfully."
 else
     echo "pip is already installed."
 fi  
-
-# Install virtualenv if not already installed
-if ! command -v virtualenv &> /dev/null; then
-    echo "virtualenv is not installed. Installing virtualenv..."
-    sudo pip3 install virtualenv
-    echo "virtualenv installed successfully."
-else
-    echo "virtualenv is already installed."
-fi
 
 # Install python3-venv if not already installed
 if ! dpkg -l | grep -q python3-venv; then
@@ -35,6 +26,8 @@ if ! dpkg -l | grep -q python3-venv; then
     echo "python3-venv installed successfully."
 else
     echo "python3-venv is already installed."
+fi
+
 
 # source the virtual environment if it exists
 if [ -d "venv" ]; then
