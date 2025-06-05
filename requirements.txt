@@ -5,3 +5,7 @@ dotenv
 pylance
 sentinelhub
 ipywidgets
+matplotlib
+datetime
+os
+utils
