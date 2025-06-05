@@ -4,3 +4,4 @@ requests-oauthlib
 dotenv
 pylance
 sentinelhub
+ipywidgets
